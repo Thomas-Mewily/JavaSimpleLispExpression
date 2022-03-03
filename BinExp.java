@@ -20,7 +20,7 @@ public class BinExp extends Exp // Binary expression
             case "-": return Left.Eval()-Right.Eval();
             case "*": return Left.Eval()*Right.Eval();
             case "/": return Left.Eval()/Right.Eval();
-            default : System.out.println("Unknow binary operator: "+Operation); return 0; // Error
+            default : Useful.crash("Unknow binary operator: "+Operation); return 0; // Error
         }
     }
 }
